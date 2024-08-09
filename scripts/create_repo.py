@@ -11,11 +11,11 @@ repo_name = 'terraform-python-ec2'
 description = 'This repo is to discuss about python usecases'
 
 # GitHub API URL for creating a repository within an organization
-url = f'https://api.github.com/users/{user_name}/repos'
+url = f'https://api.github.com/user/repos'
 
 # Headers and payload
 headers = {
-    'Authorization': f'BEARER {github_token}',
+    'Authorization': f'token {github_token}',
     'Accept': 'application/vnd.github+json',
 }
 # this is the data we are sending to create repo
