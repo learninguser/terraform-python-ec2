@@ -1,3 +1,7 @@
+"""
+This script stops EC2 instances based on specific tags.
+It requires the AWS SDK for Python (Boto3) to interact with AWS services.
+"""
 import boto3
 from botocore.exceptions import ClientError
 

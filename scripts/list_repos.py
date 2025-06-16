@@ -1,3 +1,8 @@
+"""
+This script lists all repositories for a given GitHub user account using the GitHub API.
+It handles pagination to ensure all repositories are retrieved.
+"""
+
 import requests
 from dotenv import dotenv_values
 

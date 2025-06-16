@@ -18,7 +18,7 @@ resource "aws_lambda_function" "ec2_auto_start" {
 
   filename         = data.archive_file.ec2_auto_start_zip.output_path
   source_code_hash = data.archive_file.ec2_auto_start_zip.output_base64sha256
-  timeout = 60
+  timeout          = 60
 
   depends_on = [aws_iam_policy.lambda_policy]
 }
@@ -31,7 +31,7 @@ resource "aws_lambda_function" "ec2_auto_stop" {
 
   filename         = data.archive_file.ec2_auto_stop_zip.output_path
   source_code_hash = data.archive_file.ec2_auto_stop_zip.output_base64sha256
-  timeout = 60
+  timeout          = 60
 
   depends_on = [aws_iam_policy.lambda_policy]
 }

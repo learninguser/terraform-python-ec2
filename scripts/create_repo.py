@@ -1,8 +1,13 @@
+"""
+This script creates a GitHub repository using the GitHub API.
+It requires a personal access token with the necessary permissions.
+"""
+
 import requests
 import json
 from dotenv import dotenv_values
 
-config = dotenv_values(r"D:\Personal\DevOps\joindevops\terraform-python-ec2\scripts\.env")
+config = dotenv_values(r".env")
 
 # Configuration
 github_token = config['github_token']
